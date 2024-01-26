@@ -247,13 +247,15 @@ section {
   padding: 5rem 0;
 }
 #jw{
-  background-color: black;
+  background-color: #000;
 }
 
 #jw .inner{
   width:95%;
   margin:0 0 0 4%;
   overflow: hidden;
+  z-index: 3;
+  position: relative;
 }
 
 #jw .inner .sliders{
