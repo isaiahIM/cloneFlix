@@ -41,7 +41,7 @@
         #teleport {
             text-align: center;
             width: 100%;
-            margin-bottom: 300px;
+            margin-bottom: 400px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -52,6 +52,21 @@
             text-decoration: none;
             color: black;
             font-weight: bold;
+        }
+
+        #teleport-btn {
+            margin-top: 19px;
+        }
+
+        #teleport:hover {
+            text-decoration: underline;
+            animation: updown-motion 0.3s linear 4 alternate;
+            margin-top: 0;
+        }
+
+        @keyframes updown-motion {
+            0% {margin-top: 0px;}
+            100% {margin-top: 10px;}
         }
 
 
@@ -181,6 +196,11 @@
             font-weight: bold;
             cursor: pointer;
         }
+
+        #help-btn:hover {
+            background-color: #4c4948;
+            transition: 0.2s;
+        }
     </style>
     
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
@@ -223,13 +243,16 @@
     </div>
 
     <div id="teleport">
-        <a href="#account-section">주제 살펴보기</a>
-        <a href="#account-section" class="material-symbols-outlined">arrow_downward</a>
+        <a href="#account-section">
+            <span id="teleport-title">주제 살펴보기</span>
+            <br>
+            <span id="teleport-btn" class="material-symbols-outlined">arrow_downward</span>
+        </a>
     </div>
 
     <div id="content-section">
         <div id="account-section">
-            <p  style="font-size: 18px;">계정 및 결제</p>
+            <p id="account-section-name" style="font-size: 18px;">계정 및 결제</p>
             <hr>
             <ul>
                 <li>
