@@ -41,7 +41,7 @@
         #teleport {
             text-align: center;
             width: 100%;
-            margin-bottom: 165px;
+            margin-bottom: 300px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -150,6 +150,37 @@
             text-align: left;
             font-weight: bold;
         }
+
+        #fast-link {
+            width: 30%;
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        #fast-link-title {
+            font-size: 18px;
+            font-weight: bolder;
+        }
+
+        #need-help {
+            margin-top: 20px;
+        }
+
+        #need-help p{
+            font-weight: bolder;
+        }
+
+        #help-btn {
+            width: 220px;
+            height: 50px;
+            background-color: black;
+            color: #fff;
+            border-style: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
     </style>
     
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
@@ -192,13 +223,13 @@
     </div>
 
     <div id="teleport">
-        <a href="#content-section">주제 살펴보기</a>
-        <a href="#content-section" class="material-symbols-outlined">arrow_downward</a>
+        <a href="#account-section">주제 살펴보기</a>
+        <a href="#account-section" class="material-symbols-outlined">arrow_downward</a>
     </div>
 
     <div id="content-section">
         <div id="account-section">
-            <p>계정 및 결제</p>
+            <p  style="font-size: 18px;">계정 및 결제</p>
             <hr>
             <ul>
                 <li>
@@ -226,7 +257,7 @@
         </div>
 
         <div id="problem-section">
-            <p>문제 해결</p>
+            <p style="font-size: 18px;">문제 해결</p>
             <hr>
             <ul>
                 <li>
@@ -272,7 +303,7 @@
         </div>
 
         <div id="play-section">
-            <p>시청 및 플레이</p>
+            <p style="font-size: 18px;">시청 및 플레이</p>
             <hr>
             <ul>
                 <li>
@@ -326,7 +357,7 @@
         </div>
 
         <div id="sign-section">
-            <p>가입 절차</p>
+            <p style="font-size: 18px;">가입 절차</p>
             <hr>
             <ul>
                 <li>
@@ -351,6 +382,25 @@
                     </ul>
                 </li>
             </ul> 
+        </div>
+
+        <div id="fast-link">
+            <p id="fast-link-title">빠른 링크</p>
+            <hr>
+            <a href="#" style="font-weight: bold;">비밀번호 재설정</a>
+            <hr>
+            <a href="#" style="font-weight: bold;">이메일 업데이트</a>
+            <hr>
+            <a href="#" style="font-weight: bold;">로그인 문제 지원받기</a>
+            <hr>
+            <a href="#" style="font-weight: bold;">결제수단 업데이트</a>
+            <hr>
+            <a href="#" style="font-weight: bold;">TV프로그램 및 영화 요청하기</a>
+        </div>
+
+        <div id="need-help">
+            <p style="font-size: 20px;">도움이 필요하신가요?</p>
+            <button id="help-btn">문의하기</button>
         </div>
     </div>
 </body>
