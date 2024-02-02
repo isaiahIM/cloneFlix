@@ -20,30 +20,27 @@
         <meta property="twitter:card" content="summary"/>
         <meta property="twitter:site" content="Netflix (KR)"/>
         <meta property="twitter:title" content="Netflix"/>
-        <meta
-            property="twitter:description"
-            content="스마트 TV, 태블릿, 스마트폰, PC, 게임 콘솔 등 다양한 디바이스에서 영화와 시리즈를 마음껏 즐기세요."/>
+        <meta property="twitter:description" content="스마트 TV, 태블릿, 스마트폰, PC, 게임 콘솔 등 다양한 디바이스에서 영화와 시리즈를 마음껏 즐기세요."/>
         <meta property="twitter:image" content="./images/ipad-seo.png"/>
         <meta property="twitter:url" content="https://www.netflix.com/"/>
 
         <!--브라우저 스타일 초기화-->
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"/>
 
         <!--파비콘-->
         <link rel="shortcut icon" href="../image/netflix.ico">
 
         <!--Google Material Icons-->
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
 
         <link rel="stylesheet" href="../css/common.css">
         <link rel="stylesheet" href="../css/browse.css">
+        <link rel="stylesheet" href="../css/visual-modal.css">
 
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
         <script defer="defer" src="../js/header.js"></script>
         <script defer="defer" src="../js/include.js"></script>
+        <script defer="defer" src="../js/browse.js"></script>
 
     </head>
     <body>
@@ -97,7 +94,7 @@
                                         </div>
                                         <div class="visual-button">
                                             <a class="visual-play" href="javascript:void(0)">
-                                                <button>
+                                                <button type="button">
                                                     <div class="d_flex">
                                                         <span class="material-icons">
                                                             arrow_right
@@ -106,8 +103,8 @@
                                                     </div>
                                                 </button>
                                             </a>
-                                            <a class="visual-view" href="javascript:void(0)">
-                                                <button>
+                                            <a class="visual-view" >
+                                                <button type="button" id="showModalButton">
                                                     <div class="d_flex">
                                                         <span class="material-icons">
                                                             error
