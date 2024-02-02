@@ -1,370 +1,451 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>넷플릭스 대한민국 - 인터넷으로 시리즈와 영화를 시청하세요</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--Open Graph-->
-        <meta property="og:type" content="website"/>
-        <meta property="og:site_name" content="Netflix (KR)"/>
-        <meta property="og:title" content="Netflix"/>
-        <meta
-            property="og:description"
-            content="스마트 TV, 태블릿, 스마트폰, PC, 게임 콘솔 등 다양한 디바이스에서 영화와 시리즈를 마음껏 즐기세요."/>
-        <meta property="og:image" content="./images/ipad-seo.png"/>
-        <meta property="og:url" content="https://www.netflix.com/"/>
+    <title>넷플릭스 대한민국 - 인터넷으로 시리즈와 영화를 시청하세요</title>
 
-        <!--Twitter Card-->
-        <meta property="twitter:card" content="summary"/>
-        <meta property="twitter:site" content="Netflix (KR)"/>
-        <meta property="twitter:title" content="Netflix"/>
-        <meta
-            property="twitter:description"
-            content="스마트 TV, 태블릿, 스마트폰, PC, 게임 콘솔 등 다양한 디바이스에서 영화와 시리즈를 마음껏 즐기세요."/>
-        <meta property="twitter:image" content="./images/ipad-seo.png"/>
-        <meta property="twitter:url" content="https://www.netflix.com/"/>
+    <!--Open Graph-->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Netflix (KR)" />
+    <meta property="og:title" content="Netflix" />
+    <meta property="og:description" content="스마트 TV, 태블릿, 스마트폰, PC, 게임 콘솔 등 다양한 디바이스에서 영화와 시리즈를 마음껏 즐기세요." />
+    <meta property="og:image" content="./images/ipad-seo.png" />
+    <meta property="og:url" content="https://www.netflix.com/" />
 
-        <!--브라우저 스타일 초기화-->
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"/>
+    <!--Twitter Card-->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:site" content="Netflix (KR)" />
+    <meta property="twitter:title" content="Netflix" />
+    <meta property="twitter:description" content="스마트 TV, 태블릿, 스마트폰, PC, 게임 콘솔 등 다양한 디바이스에서 영화와 시리즈를 마음껏 즐기세요." />
+    <meta property="twitter:image" content="./images/ipad-seo.png" />
+    <meta property="twitter:url" content="https://www.netflix.com/" />
 
-        <!--파비콘-->
-        <link rel="shortcut icon" href="../image/netflix.ico">
+    <!--브라우저 스타일 초기화-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
 
-        <!--Google Material Icons-->
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <!--파비콘-->
+    <link rel="shortcut icon" href="../images/netflix.ico">
 
-        <link rel="stylesheet" href="../css/common.css">
-        <link rel="stylesheet" href="../css/browse.css">
+    <!--Google Material Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
-        <script defer="defer" src="../js/header.js"></script>
-        <script defer="defer" src="../js/include.js"></script>
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+    <!--ScrollMagic-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
 
-    </head>
-    <body>
-        <div class="wrapper">
-            <!-- header -->
-            <header
-                data-include-file="../include/header.html"
-                class="header-wrap includeJs">
-            </header>
-            <!-- //header -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/browse.css">
 
-            <div class="main-view">
-                <div class="visual-container">
-                    <div class="row">
-                        <div class="visual">
-                            <div class="image-wrap">
-                                <img src="../images/browse/visual01.webp" alt="">
-                                <div class="visualBack"></div>
-                                <div class="bottemBack"></div>
-                                <div class="agebutton">
-                                    <span class="maturity-rating">
-                                        <span class="maturity-graphic">
-                                            <svg
-                                                id="maturity-rating-978"
-                                                viewbox="0 0 100 100"
-                                                class="svg-icon svg-icon-maturity-rating-978 ">
-                                                <path
-                                                    id="FIll---Red"
-                                                    fill="#C52E37"
-                                                    d="M88.728 100H11.27C5.043 100 0 94.957 0 88.73V11.274C0 5.048 5.043 0 11.27 0h77.458C94.954 0 100 5.048 100 11.274V88.73c0 6.227-5.046 11.27-11.272 11.27"></path>
-                                                <path
-                                                    id="18"
-                                                    fill="#FFFFFE"
-                                                    d="M81.473 15.482c.846 0 1.534.687 1.534 1.533v22.099c0 2.036-.283 3.563-.852 4.581-.568 1.02-1.542 1.947-2.918 2.784l-4.581 2.431 4.58 2.156c.777.417 1.424.834 1.93 1.254.51.42.917.931 1.215 1.528.298.6.507 1.32.626 2.157.12.84.182 1.858.182 3.058v23.533c0 .846-.686 1.533-1.533 1.533H43.21a1.536 1.536 0 01-1.535-1.533V59.063c0-2.218.255-3.896.763-5.036.51-1.135 1.538-2.127 3.1-2.961l4.582-2.156-4.581-2.43c-1.376-.838-2.35-1.778-2.92-2.832-.565-1.046-.855-2.563-.855-4.534V17.015c0-.846.688-1.533 1.534-1.533zm-45.008 0V84.13H21.103V34.62h-5.485l7.104-19.136h13.743zm29.913 39.176h-7.89c-.845 0-1.534.686-1.534 1.532v13.737c0 .846.689 1.534 1.535 1.534h7.89c.846 0 1.534-.688 1.534-1.534V56.19c0-.846-.688-1.532-1.535-1.532zm0-26.548h-7.89c-.845 0-1.534.686-1.534 1.532v12.014c0 .846.689 1.533 1.535 1.533h7.89c.846 0 1.534-.687 1.534-1.533V29.642c0-.846-.688-1.532-1.535-1.532z"></path>
-                                            </svg>
-                                        </span>
+    <script defer="defer" src="../js/header.js"></script>
+    <script defer="defer" src="../js/include.js"></script>
+    <script defer src="../js/browse.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- header -->
+        <header data-include-file="../include/header.html" class="header-wrap includeJs">
+        </header>
+        <!-- //header -->
+
+        <div class="main-view">
+            <div class="visual-container">
+                <div class="row">
+                    <div class="visual">
+                        <div class="image-wrap">
+                            <img src="../images/browse/visual01.webp" alt="">
+                            <div class="visualBack"></div>
+                            <div class="bottemBack"></div>
+                            <div class="agebutton">
+                                <span class="maturity-rating">
+                                    <span class="maturity-graphic">
+                                        <svg id="maturity-rating-978" viewbox="0 0 100 100"
+                                            class="svg-icon svg-icon-maturity-rating-978 ">
+                                            <path id="FIll---Red" fill="#C52E37"
+                                                d="M88.728 100H11.27C5.043 100 0 94.957 0 88.73V11.274C0 5.048 5.043 0 11.27 0h77.458C94.954 0 100 5.048 100 11.274V88.73c0 6.227-5.046 11.27-11.272 11.27">
+                                            </path>
+                                            <path id="18" fill="#FFFFFE"
+                                                d="M81.473 15.482c.846 0 1.534.687 1.534 1.533v22.099c0 2.036-.283 3.563-.852 4.581-.568 1.02-1.542 1.947-2.918 2.784l-4.581 2.431 4.58 2.156c.777.417 1.424.834 1.93 1.254.51.42.917.931 1.215 1.528.298.6.507 1.32.626 2.157.12.84.182 1.858.182 3.058v23.533c0 .846-.686 1.533-1.533 1.533H43.21a1.536 1.536 0 01-1.535-1.533V59.063c0-2.218.255-3.896.763-5.036.51-1.135 1.538-2.127 3.1-2.961l4.582-2.156-4.581-2.43c-1.376-.838-2.35-1.778-2.92-2.832-.565-1.046-.855-2.563-.855-4.534V17.015c0-.846.688-1.533 1.534-1.533zm-45.008 0V84.13H21.103V34.62h-5.485l7.104-19.136h13.743zm29.913 39.176h-7.89c-.845 0-1.534.686-1.534 1.532v13.737c0 .846.689 1.534 1.535 1.534h7.89c.846 0 1.534-.688 1.534-1.534V56.19c0-.846-.688-1.532-1.535-1.532zm0-26.548h-7.89c-.845 0-1.534.686-1.534 1.532v12.014c0 .846.689 1.533 1.535 1.533h7.89c.846 0 1.534-.687 1.534-1.533V29.642c0-.846-.688-1.532-1.535-1.532z">
+                                            </path>
+                                        </svg>
                                     </span>
-                                </div>
+                                </span>
                             </div>
-                            <div class="text-container">
-                                <div class="info layer">
-                                    <div class="logotext">
-                                        <div class="title-wrapper">
-                                            <div class="visualtitle"><img src="../images/browse/visualtext.webp" alt=""></div>
+                        </div>
+                        <div class="text-container">
+                            <div class="info layer">
+                                <div class="logotext">
+                                    <div class="title-wrapper">
+                                        <div class="visualtitle"><img src="../images/browse/visualtext.webp" alt="">
                                         </div>
-                                        <div class="info-wrap">
-                                            <div class="info-subtxet">
-                                                <h2>지금 리미티드 시리즈를 시청하세요</h2>
-                                                <p>콜롬비아 메데인을 떠나 마이애미 마약 제국의 '대모'로 우뚝 선 그녀. 그리셀다 블랑코의 여정을 다룬 실화 바탕의 픽션 드라마.</p>
-                                            </div>
+                                    </div>
+                                    <div class="info-wrap">
+                                        <div class="info-subtxet">
+                                            <h2>지금 리미티드 시리즈를 시청하세요</h2>
+                                            <p>콜롬비아 메데인을 떠나 마이애미 마약 제국의 '대모'로 우뚝 선 그녀. 그리셀다 블랑코의 여정을 다룬 실화 바탕의 픽션 드라마.
+                                            </p>
                                         </div>
-                                        <div class="visual-button">
-                                            <a class="visual-play" href="javascript:void(0)">
-                                                <button>
-                                                    <div class="d_flex">
-                                                        <span class="material-icons">
-                                                            arrow_right
-                                                        </span>
-                                                        <p>재생</p>
-                                                    </div>
-                                                </button>
-                                            </a>
-                                            <a class="visual-view" href="javascript:void(0)">
-                                                <button>
-                                                    <div class="d_flex">
-                                                        <span class="material-icons">
-                                                            error
-                                                        </span>
-                                                        <p>상세 정보</p>
-                                                    </div>
-                                                </button>
-                                            </a>
-                                        </div>
+                                    </div>
+                                    <div class="visual-button">
+                                        <a class="visual-play" href="javascript:void(0)">
+                                            <button>
+                                                <div class="d_flex">
+                                                    <span class="material-icons">
+                                                        arrow_right
+                                                    </span>
+                                                    <p>재생</p>
+                                                </div>
+                                            </button>
+                                        </a>
+                                        <a class="visual-view" href="javascript:void(0)">
+                                            <button>
+                                                <div class="d_flex">
+                                                    <span class="material-icons">
+                                                        error
+                                                    </span>
+                                                    <p>상세 정보</p>
+                                                </div>
+                                            </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <section id="jw">
+            <section id="jw">
                 <div class="inner">
-                    <!-- <div class="sliders slider1" onscroll="getScrollVal()">
-                        <h2>해외 영화</h2>
-                        <ul class="slider movie">
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/movie01.jpg" alt="스파이더맨"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/movie02.jpg" alt="그레이맨"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/movie03.jpg" alt="올드 가드"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/movie04.jpg" alt="마리오 브라더스"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/movie05.jpg" alt="6 언더그라운드"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/movie06.jpg" alt="존윅3"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/movie07.jpg" alt="어바웃 타임"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/movie08.jpg" alt="미션 임파서블"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/movie09.jpg" alt="나는 내일, 어제의 너와 만난다"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/movie10.jpg" alt="이미테이션 게임"></a>
-                            </li>
-                            <div class="right_arrow">
-                                <i class="arrow right"></i>
+                    <div class="sliders">
+                        <div class="slider1">
+                            <h2>해외 영화</h2>
+                            <div class="slider swiper-container">
+                                <div class="movie swiper-wrapper">
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/movie01.jpg" alt="스파이더맨"></a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/movie02.jpg" alt="그레이맨"></a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/movie03.jpg" alt="올드 가드"></a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/movie04.jpg" alt="마리오 브라더스"></a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/movie05.jpg" alt="6 언더그라운드"></a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/movie06.jpg" alt="존윅3"></a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/movie07.jpg" alt="어바웃 타임"></a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/movie08.jpg" alt="미션 임파서블"></a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/movie09.jpg" alt="나는 내일, 어제의 너와 만난다"></a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/movie10.jpg" alt="이미테이션 게임"></a>
+                                    </div>
+                                </div>
                             </div>
-                        </ul>
-                    </div> -->
-                    <div class="sliders slider1" onscroll="getScrollVal()">
-                        <h2>해외 영화</h2>
-                        <div class="slider movie">
-                            <div class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/movie01.jpg" alt="스파이더맨"></a>
-                            </div>
-                            <div class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/movie02.jpg" alt="그레이맨"></a>
-                            </div>
-                            <div class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/movie03.jpg" alt="올드 가드"></a>
-                            </div>
-                            <div class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/movie04.jpg" alt="마리오 브라더스"></a>
-                            </div>
-                            <div class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/movie05.jpg" alt="6 언더그라운드"></a>
-                            </div>
-                            <div class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/movie06.jpg" alt="존윅3"></a>
-                            </div>
-                            <div class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/movie07.jpg" alt="어바웃 타임"></a>
-                            </div>
-                            <div class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/movie08.jpg" alt="미션 임파서블"></a>
-                            </div>
-                            <div class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/movie09.jpg" alt="나는 내일, 어제의 너와 만난다"></a>
-                            </div>
-                            <div class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/movie10.jpg" alt="이미테이션 게임"></a>
-                            </div>
-                            <div class="right_arrow">
+
+                            <div class="right_arrow swiper-next">
                                 <i class="arrow right"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="sliders slider2">
-                        <h2>한국 영화</h2>
-                        <ul class="slider k_movie">
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/k_movie01.jpg" alt="내부자들"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/k_movie02.jpg" alt="더 킹"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/k_movie03.jpg" alt="타짜"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/k_movie04.jpg" alt="신세계"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/k_movie05.jpg" alt="범죄와의 전쟁"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/k_movie06.jpg" alt="베테랑"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/k_movie07.jpg" alt="아가씨"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/k_movie08.jpg" alt="연애 빠진 로맨스"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/k_movie09.jpg" alt="신의 한수"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/k_movie10.jpg" alt="광해"></a>
-                            </li>
-                            <div class="right_arrow">
+                    
+                    <div class="sliders">
+                        <div class="slider2">
+                            <h2>한국 영화</h2>
+                            <div class="slider swiper-container">
+                                <div class="movie swiper-wrapper">
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/k_movie01.jpg" alt="내부자들">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)"class="container">
+                                            <img src="../images/browse/k_movie02.jpg" alt="더 킹">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/k_movie03.jpg" alt="타짜">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/k_movie04.jpg" alt="신세계">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/k_movie05.jpg"alt="범죄와의 전쟁">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/k_movie06.jpg" alt="베테랑">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/k_movie07.jpg" alt="아가씨">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)"
+                                            class="container">
+                                            <img src="../images/browse/k_movie08.jpg" alt="연애 빠진 로맨스">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/k_movie09.jpg" alt="신의 한수">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/k_movie10.jpg" alt="광해">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="right_arrow swiper-next">
                                 <i class="arrow right"></i>
                             </div>
-                        </ul>
+                        </div>
                     </div>
-                    <div class="sliders slider3">
-                        <h2>키즈</h2>
-                        <ul class="slider kids">
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/kids01.jpg" alt="뽀로로"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/kids02.jpg" alt="라바"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/kids03.jpg" alt="캐치! 티니핑"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/kids04.jpg" alt="마이티"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/kids05.jpg" alt="장화 신은 고양이"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/kids06.jpg" alt="아바타"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/kids07.jpg" alt="또봇"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/kids08.jpg" alt="안녕 자두야"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/kids09.jpg" alt="타요"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/kids10.jpg" alt="꼬미 마녀 라라"></a>
-                            </li>
-                            <div class="right_arrow">
+                    
+                    <div class="sliders">
+                        <div class="slider3">
+                            <h2>키즈</h2>
+                            <div class="slider swiper-container">
+                                <div class="movie swiper-wrapper">
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/kids01.jpg" alt="뽀로로">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)"class="container">
+                                            <img src="../images/browse/kids02.jpg" alt="라바">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/kids03.jpg" alt="캐치! 티니핑">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/kids04.jpg" alt="마이티">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/kids05.jpg" alt="장화 신은 고양이">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/kids06.jpg" alt="아바타">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/kids07.jpg" alt="또봇">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)"
+                                            class="container">
+                                            <img src="../images/browse/kids08.jpg" alt="안녕 자두야">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/kids09.jpg" alt="타요">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/kids10.jpg" alt="꼬미 마녀 라라">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="right_arrow swiper-next">
                                 <i class="arrow right"></i>
                             </div>
-                        </ul>
+                        </div>
                     </div>
-                    <div class="sliders slider4">
-                        <h2>한국 드라마</h2>
-                        <ul class="slider k_drama">
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/k_drama01.jpg" alt="힘쎈 여자 도봉순"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/k_drama02.jpg" alt="슬기로운 의사생활"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/k_drama03.jpg" alt="더 글로리"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/k_drama04.jpg" alt="미스터 선샤인"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/k_drama05.jpg" alt="우리들의 블루스"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/k_drama06.jpg" alt="비밀의 숲"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/k_drama07.jpg" alt="응답하라 1988"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/k_drama08.jpg" alt="나의 아저씨"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/k_drama09.jpg" alt="나의 해방일지"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/k_drama10.jpg" alt="재벌집 막내아들"></a>
-                            </li>
-                            <div class="right_arrow">
+                    
+                    <div class="sliders">
+                        <div class="slider4">
+                            <h2>한국 드라마</h2>
+                            <div class="slider swiper-container">
+                                <div class="movie swiper-wrapper">
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)"class="container">
+                                            <img src="../images/browse/k_drama02.jpg" alt="슬기로운 의사생활">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/k_drama03.jpg" alt="더 글로리">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/k_drama04.jpg" alt="미스터 선샤인">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/k_drama05.jpg" alt="우리들의 블루스">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/k_drama06.jpg" alt="비밀의 숲">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/k_drama07.jpg" alt="응답하라 1988">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)"
+                                            class="container">
+                                            <img src="../images/browse/k_drama08.jpg" alt="나의 아저씨">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/k_drama09.jpg" alt="나의 해방일지">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/k_drama10.jpg" alt="재벌집 막내아들">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/k_drama01.jpg" alt="힘쎈 여자 도봉순">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="right_arrow swiper-next">
                                 <i class="arrow right"></i>
                             </div>
-                        </ul>
+                        </div>
                     </div>
-                    <div class="sliders slider5">
-                        <h2>아니메</h2>
-                        <ul class="slider anime">
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/anime01.jpg" alt="원피스"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/anime02.jpg" alt="하이큐"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/anime03.jpg" alt="최애의 아이"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/anime04.jpg" alt="귀멸의 칼날"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/anime05.jpg" alt="헌터X헌터"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/anime06.jpg" alt="Psycho-pass"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/anime07.jpg" alt="슬램덩크"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/anime08.jpg" alt="베이블레이드"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/anime09.jpg" alt="주술회전"></a>
-                            </li>
-                            <li class="content">
-                                <a href="javascript:void(0)" class="movie_container"><img src="../image/browse/anime10.jpg" alt="나 혼자만 레벨업"></a>
-                            </li>
-                            <div class="right_arrow" onclick="scroll()">
+                    
+                    <div class="sliders">
+                        <div class="slider5">
+                            <h2>아니메</h2>
+                            <div class="slider swiper-container">
+                                <div class="movie swiper-wrapper">
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)"class="container">
+                                            <img src="../images/browse/anime01.jpg" alt="원피스">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/anime02.jpg" alt="하이큐">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/anime03.jpg" alt="최애의 아이">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/anime04.jpg" alt="귀멸의 칼날">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/anime06.jpg" alt="Psycho-pass">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/anime07.jpg" alt="슬램덩크">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)"
+                                            class="container">
+                                            <img src="../images/browse/anime08.jpg" alt="베이블레이드">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/anime05.jpg" alt="헌터X헌터">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/anime09.jpg" alt="주술회전">
+                                        </a>
+                                    </div>
+                                    <div class="content swiper-slide">
+                                        <a href="javascript:void(0)" class="container">
+                                            <img src="../images/browse/anime10.jpg" alt="나 혼자만 레벨업">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="right_arrow swiper-next">
                                 <i class="arrow right"></i>
                             </div>
-                        </ul>
+                        </div>
                     </div>
-                </div>
+                </div> 
             </section>
-
-
+            
         </div>
-            <!-- footer -->
-            <footer
-                data-include-file="../include/footer.html" class="footer-wrap includeJs">
-            </footer>
-            <!-- //footer -->
-        </div>
+        <!-- footer -->
+        <footer data-include-file="../include/footer.html" class="footer-wrap includeJs">
+        </footer>
+        <!-- //footer -->
+    </div>
 
-    </body>
+</body>
+
 </html>
