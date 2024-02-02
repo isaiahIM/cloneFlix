@@ -71,6 +71,7 @@
 
   .main-view .bottemBack {
     background-color: transparent;
+    /* background-image: linear-gradient(180deg,hsla(0,0%,8%,0) 0,hsla(0,0%,8%,.15) 15%,hsla(0,0%,8%,.35) 29%,hsla(0,0%,8%,.58) 44%,#141414 68%,#141414); */
     background-position: 0 top;
     background-repeat: repeat-x;
     background-size: 100% 100%;
@@ -148,6 +149,7 @@
     min-height: 13.2vw;
     position: relative;
   } */
+
   .main-view .tilte-wrapper img {
     transform-origin: bottom left;
     width: 100%;
@@ -243,23 +245,24 @@
     height: 2.4rem;
   }
 
-  .main-view .visual-button a.visual-play .d_flex span {
-    font-size: 3vw;
+  view .visual-button a.visual-play .d_flex span{
+    font-size: 2vw;
+
   }
 
   .main-view .visual-button a.visual-view,
   .main-view .visual-button a.visual-view .d_flex p {
-
     color: white;
   }
 
-  .main-view .visual-button a.visual-view .d_flex span {
-    font-size: 2vw;
+  
+  .main-view .visual-button a.visual-view .d_flex span{
+    font-size: 1.5vw;
     color: var(--color-white);
   }
 
-  .main-view .visual-button a .d_flex p {
-    font-size: 1.3vw;
+  .main-view .visual-button a .d_flex p{
+    font-size: 1.1vw;
   }
 
   .main-view .visual-button a.visual-play button:hover {
