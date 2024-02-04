@@ -4,7 +4,7 @@ html {
     --color-red : #e50914;
     --color-font: #000;
     --color-gray: #808080;
-    --color-gray: #ffffffB3;
+    --color-gray2: #ffffffB3;
     --color-shadow: #000000bf;
     --color-shadow2:#0f0f0f4b;
     --color-shadow3: rgba(0, 0, 0, 0.7);
@@ -13,14 +13,21 @@ html {
 
   }
 
+  @font-face {
+    font-family: 'DOSPilgiMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/DOSPilgiMedium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
   body {
     color: var(--color-font);
     font-size: 1rem;
     line-height: 1;
     word-break: keep-all;
-    font-family: "Roboto", "Noto Sans KR", sans-serif;
-    background-color: var(--color-black);
+    font-family: "DOSPilgiMedium", sans-serif;
+    /* background-color: var(--color-black); */
   }
   a {
     color: var(--color-font);
@@ -57,7 +64,10 @@ html {
   padding: 0 4%;
   position: relative;
   background-image: linear-gradient(180deg,rgba(0,0,0,.7) 10%,transparent);
-  
+}
+.header-container2{
+  background-color: var(--color-white);
+  background-image: var(--color-white);
 }
 #header .herader-logo{
   cursor: pointer;
@@ -318,12 +328,17 @@ html {
   text-align: center;
 }
 /* footer */
-  #footer{
-    color: var(--color-gray);
-    margin: 1.25rem auto 0;
-    max-width: 980px;
-    padding: 0 4%;
+  .footer{
+    width: 100%;
     position: relative;
+    background-color: var(--color-black);
+  }
+  #footer .footer-container{
+    color: var(--color-gray);
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 2% 4%;
+    
   }
   #footer a{
     color: var(--color-white);
