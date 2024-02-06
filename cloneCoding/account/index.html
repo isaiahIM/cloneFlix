@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>넷플릭스 대한민국 - 인터넷으로 시리즈와 영화를 시청하세요</title>
+
+
+    <!--Open Graph-->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Netflix (KR)" />
+    <meta property="og:title" content="Netflix" />
+    <meta property="og:description" content="스마트 TV, 태블릿, 스마트폰, PC, 게임 콘솔 등 다양한 디바이스에서 영화와 시리즈를 마음껏 즐기세요." />
+    <meta property="og:image" content="./images/ipad-seo.png" />
+    <meta property="og:url" content="https://www.netflix.com/" />
+
+    <!--Twitter Card-->
+    <meta property="twitter:card" content="summary"/>
+    <meta property="twitter:site" content="Netflix (KR)"/>
+    <meta property="twitter:title" content="Netflix"/>
+    <meta property="twitter:description" content="스마트 TV, 태블릿, 스마트폰, PC, 게임 콘솔 등 다양한 디바이스에서 영화와 시리즈를 마음껏 즐기세요."/>
+    <meta property="twitter:image" content="./images/ipad-seo.png"/>
+    <meta property="twitter:url" content="https://www.netflix.com/"/>
+
+    <!--브라우저 스타일 초기화-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"/>
+
+    <!--파비콘-->
+    <link rel="shortcut icon" href="../images/netflix.ico">
+
+    <!--Google Material Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+
+    <!--Google Material Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/account.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script defer="defer" src="../js/header.js"></script>
+    <script defer="defer" src="../js/include.js"></script>
+
+<body>
+    <!-- header -->
+    <header data-include-file="../include/header2.html" class="header-wrap includeJs">
+    </header>
+    <!-- //header -->
+    <!-- 회원가입 세션 -->
+    <section class = "join">
+        
+
+        <div class = "join_card">
+            <p>1/2단계</p>
+            <h2>비밀번호를 설정해 멤버십을 시작하세요.</h2>
+            <p class = "info1">몇 단계만 더 거치면 넷플릭스 가입 완료!</p>
+            <p class = "info2">복잡한 단계는 모두 없앴습니다.</p>
+            
+            <!-- 회원가입 폼 -->
+            <form class = "join_form">
+                <!-- 도움 받은 사이트:
+                https://jong99.tistory.com/62 -->
+                <input type = "text" placeholder="이메일 주소" name="input_id">
+                <input type = "password" placeholder="비밀♥ 번호" name="input_password">
+                <input type="checkbox" class="info" name="personal_info">
+                <label for="personal_info"> 개인정보 활용 동의함</label>
+                <input type="checkbox" class="email" name="email">
+                <label for="email"> 이메일 수신받음</label>
+                <input type="button" onclick="location.href='../browse/index.html' " value="제★출">
+                
+                
+                
+            </form>
+            
+        </div>
+        
+    </section>
+    <!-- footer -->
+    <footer data-include-file="../include/footer.html" class="footer-wrap includeJs">
+    </footer>
+    <!-- //footer -->
+</body>
+</html>
