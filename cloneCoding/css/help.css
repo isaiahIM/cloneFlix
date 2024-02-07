@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    background-color: #f2f2f6b4;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 2.1875rem;
+    font-weight: bold;
+}
+
+#header{
+    position: sticky;
+}
+
+.line {
+    content: "";
+    flex-grow: 1;
+    margin: 0px 16px;
+    background: rgba(0, 0, 0, 0.35);
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+}
+
+#container {
+    text-align: center;
+    padding: 1.25rem;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#teleport {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#teleport a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#teleport-btn {
+    margin-top: 19px;
+}
+
+#teleport:hover {
+    text-decoration: underline;
+    animation: updown-motion 0.3s linear 4 alternate;
+    margin-top: 0;
+}
+
+@keyframes updown-motion {
+    0% {margin-top: 0px;}
+    100% {margin-top: 10px;}
+}
+
+
+#content-section {
+    text-align: center;
+    padding: 1.25rem;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10rem
+}
+
+#content-section a{
+    color: black;
+}
+
+#search-box {
+    padding: 0.625rem;
+    width: 44rem;
+}
+
+#search-box.fixed {
+    width: 44rem;
+    display: block;
+    position: fixed;
+    top: 0;
+    background-color: #f2f2f6b4;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.625rem;
+    box-sizing: border-box;
+    border: 0.125rem solid;
+    border-image: linear-gradient(to right, red, violet, indigo, blue);
+    border-image-slice: 1;
+    border-radius: 0.25rem;
+    outline: none;
+}
+
+#popular-topics {
+    color: grey;
+}
+
+.jy{
+    display: flex;
+}
+
+#popular-topics a {
+    color: #000000B3;
+    text-decoration: none;
+    text-decoration-line: underline;
+    margin: 0 0.1rem;
+}
+
+#popular-topics a:hover {
+    color: #000000e8;
+}
+
+
+.btn {
+    margin-top: 0.5rem;
+    display: block;
+    width: 100%;
+    background-color: #f2f2f6b4;
+    text-align: left;
+    border: none;
+    outline: none;
+    padding: 0.1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    line-height: 1.875rem;
+    font-family: 'DOSPilgiMedium';
+}
+
+#account-section,
+#problem-section,
+#play-section,
+#sign-section {
+    margin-top: 1rem;
+    padding: 0.1rem 1rem 0.1rem 1rem;
+    border-radius: 0.4rem;
+    border-style: solid;
+    border-width: 0.01rem;
+    border-color: gray;
+    width: 28%;
+    text-align: left;
+}
+
+#account-section ul,
+#problem-section ul,
+#play-section ul,
+#sign-section ul{
+    margin-bottom: 7px;
+}
+
+#hidden01 li, #hidden02 li,
+#hidden03 li, #hidden04 li,
+#hidden05 li, #hidden06 li,
+#hidden07 li, #hidden08 li,
+#hidden09 li, #hidden10 li,
+#hidden11 li, #hidden12 li,
+#hidden13 li{
+    margin: 15px 0 15px 0;
+    text-decoration: underline;
+}
+
+#hidden01 li:hover, #hidden02 li:hover,
+#hidden03 li:hover, #hidden04 li:hover,
+#hidden05 li:hover, #hidden06 li:hover,
+#hidden07 li:hover, #hidden08 li:hover,
+#hidden09 li:hover, #hidden10 li:hover,
+#hidden11 li:hover, #hidden12 li:hover,
+#hidden13 li:hover{
+    color: #fff;
+    transition: 0.2s;
+}
+
+#account-section-name{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#problem-section-name{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#play-section-name{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#sign-section-name{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#fast-link {
+    width: 30%;
+    text-align: left;
+    margin-top: 30px;
+}
+
+#fast-link a{
+    margin: 15px 0 15px 0;
+    text-decoration: underline;
+}
+
+#fast-link a:hover{
+    color: gray;
+}
+
+#fast-link-title {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+#need-help {
+    margin-top: 40px;
+}
+
+#need-help p{
+    font-weight: bolder;
+}
+
+#help-btn {
+    font-family: 'DOSPilgiMedium';
+    width: 220px;
+    height: 50px;
+    background-color: black;
+    color: #fff;
+    border-style: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 400px;
+}
+
+#help-btn:hover {
+    background-color: #4c4948;
+    transition: 0.2s;
+}
