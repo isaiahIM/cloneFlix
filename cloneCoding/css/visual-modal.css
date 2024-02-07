@@ -390,8 +390,9 @@
   width: 50%;
 }
 .modal-content-end .content_list .cloud2 .list_main_text{
+  line-height: 1.6;
   font-size: 0.9rem;
-  width: 50%;
+  width: 55%;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
