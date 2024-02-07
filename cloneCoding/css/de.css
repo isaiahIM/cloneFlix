@@ -54,6 +54,7 @@
 }
 #d_header .d_h_con .d_h_nav .nav_sel .nav_language option {
     color: white;
+    background-color: transparent;
 }
 #d_header .d_h_con .d_h_nav .nav_brt {
     background-color: red;
@@ -182,6 +183,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width:100%;
 
     padding : 2rem 3rem 0 4rem;
 }
@@ -201,11 +203,18 @@
     font-weight: 400;
     margin-top: 1rem;
 }
-#box .box_img{
+#box .box .box_img {
     width: 50%;
+    position:relative;
 }
-#box .box_img img{
-    width: 100%;
+#box .box .box_img .box_video0 {
+    transform: translate(5.3rem, -2.7rem);
+    top: 0;
+    position: absolute;
+}
+#box .box .box_img .box_video0 video {
+    width: 465px;
+    height: 550px
 }
 #box2 {
     position:absolute;
@@ -226,7 +235,6 @@
 #box .box .box_img1 {
     width: 40%;
     position:relative;
-
 }
 #box .box .box_img1 .box_video {
     transform: translate(5.1rem, 1rem);
@@ -236,7 +244,11 @@
 #box .box .box_img1 .box_video video {
     width: 280px;
     height: 200px;
-
+}
+#box .box_img .img {
+    width: 100%;
+    z-index: 9;
+    position: relative;
 }
 #box .box_img1 img {
     width: 100%;
@@ -400,6 +412,15 @@
     z-index: 0;
     
 }
+.add_input input {
+    padding: 1rem 0.2rem;
+    width:100%;
+    margin-right: 2rem;
+    background-color: #0000003b;
+    border-radius: 5px;
+    color:white;
+}
+
 .last_brt {
     background-color: red;
     padding: 0;
